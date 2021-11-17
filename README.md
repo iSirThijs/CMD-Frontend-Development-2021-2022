@@ -1,12 +1,9 @@
-# Procesverslag
+![LICENSE](https://img.shields.io/github/license/iSirThijs/CMD-Frontend-Development-2021-2022)
+[![CodeStyle](https://github.com/iSirThijs/CMD-Frontend-Development-2021-2022/actions/workflows/code-style.yaml/badge.svg)](https://github.com/iSirThijs/CMD-Frontend-Development-2021-2022/actions/workflows/code-style.yaml)
 
-Markdown is een simpele manier om HTML te schrijven.  
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+# Frontend Development 2021-2022
 
-Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
-Nb. Door _open_ toe te voegen aan een _details_ element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
-
+<!--
 ## Je website
 
 <details open>
@@ -18,12 +15,12 @@ link naar de website die je gaat namaken óf de naam/omschrijving van je eigen o
 
 #### Screenshot(s) van de eerste pagina (small screen):
 
-hier de naam van de pagina  
+hier de naam van de pagina
 <img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 
-hier de naam van de pagina  
+hier de naam van de pagina
 <img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
 
 </details>
@@ -89,4 +86,4 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 2. bron 2
 3. ...
 
-</details>
+</details> -->
