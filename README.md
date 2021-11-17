@@ -1,30 +1,50 @@
-![LICENSE](https://img.shields.io/github/license/iSirThijs/CMD-Frontend-Development-2021-2022)
-[![CodeStyle](https://github.com/iSirThijs/CMD-Frontend-Development-2021-2022/actions/workflows/code-style.yaml/badge.svg)](https://github.com/iSirThijs/CMD-Frontend-Development-2021-2022/actions/workflows/code-style.yaml)
+[![GitHub license](https://img.shields.io/github/license/iSirThijs/CMD-Frontend-Development-2021-2022?style=for-the-badge)](https://github.com/iSirThijs/CMD-Frontend-Development-2021-2022/blob/main/LICENSE)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/iSirThijs/CMD-Frontend-Development-2021-2022/CodeStyle?label=Development%20Code%20Style&logo=Github&style=for-the-badge)
 
 # Frontend Development 2021-2022
 
-<!--
-## Je website
+Dit is mijn werk voor het vak Frontend Development voor studieinhalers. In dit vak wordt de basis gelegd voor het toepassen van de basis technieken van het web.
 
-<details open>
-<summary>uitwerken voor kick-off werkgroep</summary>
+## 📋 Opdracht
 
-### Je opdracht:
+De opdracht gegeven voor dit vak luidt als volgt:
 
-link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+> Werk 2 verschillende pagina’s van een website uit met ‘nette’ vanilla HTML, CSS en Javascript.
 
-#### Screenshot(s) van de eerste pagina (small screen):
+Hierbij zijn wel een aantal criteria:
 
-hier de naam van de pagina
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+- Content
+  - De website bevat 2 verschillende pagina’s
+  - De website is gerealiseerd met ‘nette’ vanilla HTML en CSS
+  - De website bevat diverse content (plaatjes, formulieren, tekst etc)
+- Micro-interactie
+  - de website bevat minimaal één tot in detail uitgewerkte micro-interactie (met JS)
+- Toegangelijkheid
+  - De website is toegankelijk
+- Professionele vormgeving
+  - De website heeft een professionele vormgeving (in huisstijl – css vars. voor bijvoorbeeld kleurtjes),
+  - De website ziet er goed uit en werkt goed op telefoons (iPhone SE tot Galaxy Note),
+  - De website is volledig responsive óf heeft een extra verzorgde surface plane.
 
-#### Screenshot(s) van de tweede pagina (small screen):
+### Website
 
-hier de naam van de pagina
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+De website die wordt 'nagemaakt' is [Tweakers](tweakers.net)
+
+<details>
+<summary>Screenshots van de 2 (mobiele)pagina's van Tweakers</summary>
+
+#### Pagina 1
+
+<img src="images/README/tweakers-page1-header-main.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/README/tweakers-page1-main-footer.png" width="375px" alt="omschrijving van de pagina">
+
+#### Pagina 2
+
+<img src="images/README/tweakers-page2-header-main.png" width="375px" alt="omschrijving van de pagina">
 
 </details>
 
+<!--
 ## Toegankelijkheidstest
 
 <details>
