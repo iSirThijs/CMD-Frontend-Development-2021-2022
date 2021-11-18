@@ -32,7 +32,7 @@ De website die wordt 'nagemaakt' is [Tweakers](tweakers.net)
 
 #### Pagina 1
 
-Dit is de homepage van tweakers. Deze bestaat uit een heading en de main content, dat een verzameling links naar artikelen en andere pagina’s is 
+Dit is de homepage van tweakers. Deze bestaat uit een heading en de main content, dat een verzameling links naar artikelen en andere pagina’s is
 
 <details> 
 <summary>Pagina 1 Header en Main content</summary>
@@ -45,15 +45,17 @@ Dit is de homepage van tweakers. Deze bestaat uit een heading en de main content
 </details>
 
 ￼
-<!-- 
+
+<!--
 #### Pagina 2
-<details> 
+<details>
 <summary>Pagina 2 Header en Main content</summary>
 	<img src="images/README/tweakers-page2-header-main.png" width="375px" alt="een artikelpagina op tweakers">
 </details>
 -->
 
 ### Breakdown Schetsen
+
 Om te helpen met het maken van de website, zijn er breakdownschetsen gemaakt. Hiermee wordt op de screenshots aangegeven welke HTML elementen er gebruikt worden om de structuur op te bouwen
 
 <details> 
@@ -61,19 +63,19 @@ Om te helpen met het maken van de website, zijn er breakdownschetsen gemaakt. Hi
 	<img src="images/README/breakdown-page1-header-main.png" width="375px" alt="de homepage main content en footer van tweakers">
 </details>
 
-
 ## Eindgesprek
 
 ### Stand van zaken
 
 #### Document outline, section elements en headers
+
 Door gebruikte maken van de juiste elementen kan je al heel goed voldoen aan accessibility eisen. Het artikel van CSS tricks[^1] bracht mij hierin in de goede richting. Het laat zien wat er allemaal mogelijk is.
 
-Ik was al op de hoogte van de document outline algorithm. Hierdoor worden section elements zoals `nav`, `section`, `article` en `aside` beter benut. Zo kan je in deze elementen opnieuw beginnen met het nummeren van Headings, dus vanaf H1. 
+Ik was al op de hoogte van de document outline algorithm. Hierdoor worden section elements zoals `nav`, `section`, `article` en `aside` beter benut. Zo kan je in deze elementen opnieuw beginnen met het nummeren van Headings, dus vanaf H1.
 
-Helaas wordt dit niet ondersteund door de browser. Het artikel geeft alternatieven aan, maar is nog verbeterd door een comment van een andere gebruiker die bijvoorbeeld de post van Rachel Andrews aanhaalt[^2] waarbij wordt uitgelegd dat het voor accessibility niet goed is om de visuele order van elementen anders te laten zijn dan die van de DOM. CSS moet hier nog een oplossing voor verzinnen, voor nu is het belangrijk om op te letten wanneer je teveel met bijvoorbeeld `order` property omgaat. 
+Helaas wordt dit niet ondersteund door de browser. Het artikel geeft alternatieven aan, maar is nog verbeterd door een comment van een andere gebruiker die bijvoorbeeld de post van Rachel Andrews aanhaalt[^2] waarbij wordt uitgelegd dat het voor accessibility niet goed is om de visuele order van elementen anders te laten zijn dan die van de DOM. CSS moet hier nog een oplossing voor verzinnen, voor nu is het belangrijk om op te letten wanneer je teveel met bijvoorbeeld `order` property omgaat.
 
-Wat ik hieruit het belangrijkste vond is het gebruik van de H1. De H1 wordt bijna altijd gebruikt voor bijvoorbeeld de site titel. Op de homepage van een site, waar een overzicht staat van de website content, is dit correct. Echter een pagina van de website, bijvoorbeeld pagina 2 een artikel, daar zou de titel van het artikel de H1 moeten zijn, aangezien dat de content van die pagina is. 
+Wat ik hieruit het belangrijkste vond is het gebruik van de H1. De H1 wordt bijna altijd gebruikt voor bijvoorbeeld de site titel. Op de homepage van een site, waar een overzicht staat van de website content, is dit correct. Echter een pagina van de website, bijvoorbeeld pagina 2 een artikel, daar zou de titel van het artikel de H1 moeten zijn, aangezien dat de content van die pagina is.
 
 ### Screenshot(s)
 
