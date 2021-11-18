@@ -86,5 +86,4 @@ Wat ik hieruit het belangrijkste vond is het gebruik van de H1. De H1 wordt bijn
 hier screenshot(s) van je eindresultaat
 
 [^1]: [CSS Tricks - How to section your HTML](https://css-tricks.com/how-to-section-your-html/)
-
-[^2] [Grid-content reordering and accessibility](https://rachelandrew.co.uk/archives/2019/06/04/grid-content-re-ordering-and-accessibility/)
+[^2]: [Grid-content reordering and accessibility](https://rachelandrew.co.uk/archives/2019/06/04/grid-content-re-ordering-and-accessibility/)
