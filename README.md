@@ -62,6 +62,10 @@ Om te helpen met het maken van de website, zijn er breakdownschetsen gemaakt. Hi
 <summary>Pagina 1 Header en Main content</summary>
 	<img src="images/README/breakdown-page1-header-main.png" width="375px" alt="de homepage main content en footer van tweakers">
 </details>
+<details> 
+<summary>Pagina 1 Main en content</summary>
+	<img src="images/README/breakdown-page1-main-footer.png" width="375px" alt="de homepage main content en footer van tweakers">
+</details>
 
 ## Eindgesprek
 
