@@ -15,31 +15,25 @@
 
 	<body>
 		<header>
+			<a href="#main-nav">menu</a>
 			<h1>
 				<a href="/">
 					<picture>
-						<source srcset="images/tweakers_logo_full.svg" />
-						<img width="50%" src="images/tweakers_logo_full.svg" alt="Tweakers" />
+						<source srcset="images/logo/tweakers-full.svg" media="(min-width: 768px)" />
+						<source srcset="images/logo/tweakers-small.webp" type="image/webp" />
+						<source srcset="images/logo/tweakers-small.png" type="image/png" />
+						<img height="44px" src="images/tweakers_logo_full.svg" alt="Tweakers" />
 					</picture>
 				</a>
 			</h1>
-			<nav>
-				<ul>
-					<li><a href="">Nieuws</a></li>
-					<li><a href="">Reviews</a></li>
-					<li><a href="">Pricewatch</a></li>
-					<li><a href="">Vraag & Aanbod</a></li>
-					<li><a href="">Forum</a></li>
-				</ul>
-			</nav>
-			<form action="" role="search">
-				<label>
-					<input type="search" placeholder="Zoek in de site" />
-				</label>
-				<button type="submit">Zoeken</button>
-			</form>
 		</header>
-		<nav aria-label="secondary"></nav>
+		<form action="" role="search">
+			<label>
+				<input type="search" placeholder="Zoek in de site" />
+			</label>
+			<button type="submit">Zoeken</button>
+		</form>
+		<nav aria-label="Secondary"></nav>
 		<main>
 			<article>
 				<a href="">
@@ -329,6 +323,15 @@
 			</article>
 		</main>
 		<footer>
+			<nav id="main-nav" aria-label="Primary">
+				<ul>
+					<li><a href="">Nieuws</a></li>
+					<li><a href="">Reviews</a></li>
+					<li><a href="">Pricewatch</a></li>
+					<li><a href="">Vraag & Aanbod</a></li>
+					<li><a href="">Forum</a></li>
+				</ul>
+			</nav>
 			<ul>
 				<li><a href="">Adverteren</a></li>
 				<li><a href="">Contact</a></li>

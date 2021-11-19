@@ -4,3 +4,133 @@
 *::before {
 	box-sizing: border-box;
 }
+
+:root {
+	/* Tweakers Red */
+	--tweakers-red-base: 343;
+	--tweakers-red-normal: hsl(var(--tweakers-red-base) 83% 33%);
+	--tweakers-red-dark: hsl(var(--tweakers-red-base) 78% 30%);
+	--tweakers-red-alt1: hsl(345 81% 40%);
+	--tweakers-red-alt2: hsl(348 69% 38%);
+
+	/* Tweakers Green */
+	--tweakers-green-base: 65;
+	--tweakers-green-normal: hsl(var(--tweakers-base-green) 76% 60%);
+	--tweakers-green-light: hsl(var(--tweakers-base-green) 76% 65%);
+
+	/* Tweakers Blues */
+	--tweakers-blue-base: 207;
+	--tweakers-blue-normal: hsl(var(--tweakers-blue-base) 77% 38%);
+	--tweakers-blue-light: hsl(var(--tweakers-blue-base) 77% 43%);
+	--tweakers-blue-alt-base: 210;
+	--tweakers-blue-alt-normal: hsl(var(--tweakers-blue-alt-base) 99% 29%);
+	--tweakers-blue-grey-base: 206;
+	--tweakers-blue-grey-light: hsl(var(--tweakers-blue-grey-base) 17% 92%);
+
+	/* Defaults */
+
+	/* Backgrounds */
+	--background-gray: var(--tweakers-grey);
+	--background-red: var(--tweakers-red-normal);
+	--background-linear: linear-gradient(var(--tweakers-red-alt2), var(--tweakers-red-normal) 68px);
+}
+
+body {
+	background-color: #fff;
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body > header {
+	position: sticky;
+	top: 0;
+	display: flex;
+	background: var(--background-red);
+	background: var(--background-linear);
+	border-bottom: solid 1px rgba(0, 0, 0, 25%); /* stylelint-disable-line color-function-notation */ /* Bug in RGB color notation */
+}
+
+body > header > a:first-child {
+	display: block;
+	flex: 0 0 42px;
+	height: 44px;
+	font-size: 0;
+	background-image: url('/images/icons/bars-grey.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+body > header a:not(header > a:first-child) picture {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100%;
+}
+
+body > header a:not(header > a:first-child):hover {
+	background-color: var(--tweakers-red-dark);
+}
+
+body > header h1 {
+	margin: 0;
+}
+
+body > header ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+form {
+	font-size: 16px;
+}
+
+body > form {
+	background-color: var(--background-gray);
+	display: flex;
+	justify-content: stretch;
+}
+
+form[role='search'] button {
+	background-image: ;
+}
+
+/* Button states */
+.button {
+	--button-background-color: var(--tweakers-blue-normal);
+	--button-border-color: var(--tweakers-blue-normal);
+}
+
+.button:hover {
+	--button-background-color: var(--tweakers-blue-light);
+	--button-border-color: var(--tweakers-blue-light);
+}
+
+.button.secondary {
+	--button-background-color: rgba(0 0 0 0%);
+	--button-border-color: var(--tweakers-blue-normal);
+}
+
+.button.secondary:hover {
+	--button-background-color: rgba(255 255 255 0.66%);
+	--button-border-color: var(--tweakers-red-2);
+}
+
+.button.plus {
+	--button-background-color: rgba(0 0 0 0%);
+	--button-border-color: var(--tweakers-green-normal);
+}
+
+.button.plus:hover {
+	--button-background-color: var(--tweakers-green-light);
+	--button-border-color: var(--tweakers-green-light);
+}
