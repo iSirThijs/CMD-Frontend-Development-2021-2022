@@ -30,7 +30,7 @@
 	/* Defaults */
 
 	/* Backgrounds */
-	--background-gray: var(--tweakers-grey);
+	--background-grey: var(--tweakers-blue-grey-light);
 	--background-red: var(--tweakers-red-normal);
 	--background-linear: linear-gradient(var(--tweakers-red-alt2), var(--tweakers-red-normal) 68px);
 }
@@ -92,16 +92,38 @@ body > header ul {
 
 form {
 	font-size: 16px;
+	display: flex;
+	align-content: stretch;
+	padding: 7px 10px;
 }
 
 body > form {
-	background-color: var(--background-gray);
-	display: flex;
-	justify-content: stretch;
+	background-color: var(--background-grey);
+}
+
+body > form label {
+	flex: 1 1 auto;
+	border: 1px solid #d9d9d9;
+}
+
+input[type='search'] {
+	width: 100%;
+	height: 100%;
+	border: none;
+	font-size: inherit;
+	padding: 4px 10px;
 }
 
 form[role='search'] button {
-	background-image: ;
+	flex: 0 0 35px;
+	font-size: 0;
+	background-color: #fff;
+	background-image: url('/images/icons/search-grey.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 1px solid #d9d9d9;
+	border-left: none;
 }
 
 /* Button states */
