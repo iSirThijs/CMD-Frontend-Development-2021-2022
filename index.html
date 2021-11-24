@@ -7,7 +7,11 @@
 
 		<title>Tweakers - Wij stellen technologie op de proef</title>
 
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="styles/style.css" rel="stylesheet" />
+		<link href="styles/icons.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;700&display=swap" rel="stylesheet" />
 		<link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
 
 		<script type="module" src="scripts/script.mjs"></script>
@@ -35,24 +39,24 @@
 		</form>
 		<nav aria-label="Secondary">
 			<h2>Vergelijk Prijzen</h2>
-			<a href="">Alle categorieën</a>
+			<a href="">Alle categorieën <i></i></a>
 			<ul>
-				<li><a href="">Smartphones</a></li>
-				<li><a href="">Laptops</a></li>
-				<li><a href="">Tablets</a></li>
-				<li><a href="">Hoofdtelefoon</a></li>
-				<li><a href="">Televisies</a></li>
-				<li><a href="">Gaming</a></li>
-				<li><a href="">Monitoren</a></li>
-				<li><a href="">Opslag</a></li>
-				<li><a href="">Componenten</a></li>
-				<li><a href="">Camera's</a></li>
-				<li><a href="">Desktops</a></li>
-				<li><a href="">Videokaarten</a></li>
+				<li><a class="smartphones" href="">Smartphones</a></li>
+				<li><a class="laptops" href="">Laptops</a></li>
+				<li><a class="tablets" href="">Tablets</a></li>
+				<li><a class="hoofdtelefoons" href="">Hoofdtelefoon</a></li>
+				<li><a class="televisies" href="">Televisies</a></li>
+				<li><a class="gaming" href="">Gaming</a></li>
+				<li><a class="monitoren" href="">Monitoren</a></li>
+				<li><a class="opslag" href="">Opslag</a></li>
+				<li><a class="componenten" href="">Componenten</a></li>
+				<li><a class="cameras" href="">Camera's</a></li>
+				<li><a class="desktops" href="">Desktops</a></li>
+				<li><a class="videokaarten" href="">Videokaarten</a></li>
 			</ul>
 		</nav>
 		<main>
-			<article>
+			<article class="featured plus">
 				<a href="">
 					<header>
 						<h2>Apples andere richting voor design</h2>
@@ -67,7 +71,7 @@
 					<a href="">Lees artikel</a>
 				</footer>
 			</article>
-			<article>
+			<article class="list news">
 				<header>
 					<a href="">
 						<h2>Laatste Nieuws</h2>
@@ -75,11 +79,11 @@
 					<a href="">Tip de redactie</a>
 				</header>
 				<ul>
-					<li>
+					<!-- <li>
 						<p>17:13</p>
 						<a href="">Rainmeter 4.4.5</a>
 						<a href="">acht andere downloads</a>
-					</li>
+					</li> -->
 					<li>
 						<p>17:08</p>
 						<a href="">Tidal verlaagt prijs HiFi abonnement en introduceert HiFi Plus-abonnement</a>
@@ -107,7 +111,7 @@
 				</ul>
 				<a href="">Meer nieuws</a>
 			</article>
-			<article>
+			<article class="featured">
 				<a href="">
 					<header>
 						<h2>Smartphone Best Buy Guide</h2>
@@ -126,7 +130,7 @@
 					</a>
 				</footer>
 			</article>
-			<article>
+			<article class="list forum">
 				<h2>Nu op het forum</h2>
 				<ul>
 					<li>
@@ -134,61 +138,75 @@
 							<source srcset="images/default-avatar.png" />
 							<img width="35px" src="images/default-avatar.png" alt="Een generieke avatar afbeelding" />
 						</picture>
-						<a href="">Ik wil leren gamen, waar te beginnen?</a>
-						<p>In Hardware & Spielerij Algemeen</p>
+						<div>
+							<a href="">Ik wil leren gamen, waar te beginnen?</a>
+							<p>In Hardware & Spielerij Algemeen</p>
+						</div>
 					</li>
 					<li>
 						<picture>
 							<source srcset="images/default-avatar.png" />
 							<img width="35px" src="images/default-avatar.png" alt="Een generieke avatar afbeelding" />
 						</picture>
-						<a href="">[F1 2021] Race 20 GP van Qatar</a>
-						<p>In Sport</p>
+						<div>
+							<a href="">[F1 2021] Race 20 GP van Qatar</a>
+							<p>In Sport</p>
+						</div>
 					</li>
 					<li>
 						<picture>
 							<source srcset="images/default-avatar.png" />
 							<img width="35px" src="images/default-avatar.png" alt="Een generieke avatar afbeelding" />
 						</picture>
-						<a href="">[AMD Radeon RX6000 series] Levertijden & Prijzen</a>
-						<p>In Videokaarten & Beeldschermen</p>
+						<div>
+							<a href="">[AMD Radeon RX6000 series] Levertijden & Prijzen</a>
+							<p>In Videokaarten & Beeldschermen</p>
+						</div>
 					</li>
 					<li>
 						<picture>
 							<source srcset="images/default-avatar.png" />
 							<img width="35px" src="images/default-avatar.png" alt="Een generieke avatar afbeelding" />
 						</picture>
-						<a href="">[AMD Radeon RX6000 series] Levertijden & Prijzen</a>
-						<p>In Videokaarten & Beeldschermen</p>
+						<div>
+							<a href="">[AMD Radeon RX6000 series] Levertijden & Prijzen</a>
+							<p>In Videokaarten & Beeldschermen</p>
+						</div>
 					</li>
 					<li>
 						<picture>
 							<source srcset="images/default-avatar.png" />
 							<img width="35px" src="images/default-avatar.png" alt="Een generieke avatar afbeelding" />
 						</picture>
-						<a href="">Mancaves show ze hier, deel je tips & tricks</a>
-						<p>In Bouwen en klussen</p>
+						<div>
+							<a href="">Mancaves show ze hier, deel je tips & tricks</a>
+							<p>In Bouwen en klussen</p>
+						</div>
 					</li>
 					<li>
 						<picture>
 							<source srcset="images/default-avatar.png" />
 							<img width="35px" src="images/default-avatar.png" alt="Een generieke avatar afbeelding" />
 						</picture>
-						<a href="">Financieel ondersteunen niet eigen kinderen</a>
-						<p>In Persoonlijke Financiën, Studie en Loopbaan</p>
+						<div>
+							<a href="">Financieel ondersteunen niet eigen kinderen</a>
+							<p>In Persoonlijke Financiën, Studie en Loopbaan</p>
+						</div>
 					</li>
 					<li>
 						<picture>
 							<source srcset="images/default-avatar.png" />
 							<img width="35px" src="images/default-avatar.png" alt="Een generieke avatar afbeelding" />
 						</picture>
-						<a href="">Welke kwaliteit tegelwerk te verwachten</a>
-						<p>In Bouwen en klussen</p>
+						<div>
+							<a href="">Welke kwaliteit tegelwerk te verwachten</a>
+							<p>In Bouwen en klussen</p>
+						</div>
 					</li>
 				</ul>
 				<a href="">Active Topics</a>
 			</article>
-			<article>
+			<article class="list forum">
 				<h2>Populaire tweakblogs</h2>
 				<ul>
 					<li>
@@ -196,37 +214,45 @@
 							<source srcset="images/default-avatar.png" />
 							<img width="35px" src="images/default-avatar.png" alt="Een generieke avatar afbeelding" />
 						</picture>
-						<a href="">Er gaat iets niet helemaal goed bij Microsoft Xbox</a>
-						<p>Door linksquest</p>
+						<div>
+							<a href="">Er gaat iets niet helemaal goed bij Microsoft Xbox</a>
+							<p>Door linksquest</p>
+						</div>
 					</li>
 					<li>
 						<picture>
 							<source srcset="images/default-avatar.png" />
 							<img width="35px" src="images/default-avatar.png" alt="Een generieke avatar afbeelding" />
 						</picture>
-						<a href="">50 reviews of feedback - de ultieme fetisj</a>
-						<p>Door liberque</p>
+						<div>
+							<a href="">50 reviews of feedback - de ultieme fetisj</a>
+							<p>Door liberque</p>
+						</div>
 					</li>
 					<li>
 						<picture>
 							<source srcset="images/default-avatar.png" />
 							<img width="35px" src="images/default-avatar.png" alt="Een generieke avatar afbeelding" />
 						</picture>
-						<a href="">Gaan Rusland en China binnenkort aanvallen</a>
-						<p>Door Harm_H</p>
+						<div>
+							<a href="">Gaan Rusland en China binnenkort aanvallen</a>
+							<p>Door Harm_H</p>
+						</div>
 					</li>
 					<li>
 						<picture>
 							<source srcset="images/default-avatar.png" />
 							<img width="35px" src="images/default-avatar.png" alt="Een generieke avatar afbeelding" />
 						</picture>
-						<a href="">Nieuwe buren - Drugs dealen?!</a>
-						<p>Door Weissbier</p>
+						<div>
+							<a href="">Nieuwe buren - Drugs dealen?!</a>
+							<p>Door Weissbier</p>
+						</div>
 					</li>
 				</ul>
 				<a href="">Meer tweakblogs</a>
 			</article>
-			<article>
+			<article class="videos">
 				<h2>Laatste video's</h2>
 				<article>
 					<a href="">
@@ -266,7 +292,7 @@
 				</article>
 				<a href="">Bekijk alle video's</a>
 			</article>
-			<article>
+			<article class="jobs">
 				<header>
 					<h2>IT-banen</h2>
 					<form action="" role="search">
