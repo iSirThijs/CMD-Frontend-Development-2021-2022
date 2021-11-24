@@ -202,7 +202,7 @@ nav[aria-label='Secondary'] li a {
 
 /* articles default */
 article {
-	padding: 0.5rem;
+	padding: 10px;
 }
 
 article.list header {
@@ -259,6 +259,12 @@ article.list > a:last-child {
 	background-position: left center;
 	background-size: 10px;
 	background-repeat: no-repeat;
+}
+
+article.list li > div {
+	display: flex;
+	flex-flow: column;
+	gap: 10px;
 }
 
 article.news li p::before {
