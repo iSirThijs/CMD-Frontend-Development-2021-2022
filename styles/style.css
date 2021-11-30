@@ -203,6 +203,7 @@ nav[aria-label='Secondary'] li a {
 /* articles default */
 article {
 	padding: 10px;
+	line-height: 1.75em;
 }
 
 article.list header {
@@ -270,6 +271,10 @@ article.list li > div {
 article.news li p::before {
 	content: url('/images/icons/list_red.svg');
 	margin-right: 5px;
+}
+
+article.featured {
+	background-color: rgba(0, 18, 41, 75%); /* stylelint-disable-line color-function-notation */
 }
 
 /* Button states */
