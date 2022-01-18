@@ -228,38 +228,50 @@ article.list header a {
 	color: var(--tweakers-blue-alt-normal);
 }
 
-article.list ul {
+article.list ul,
+article.jobs ul {
 	margin: 0;
 	padding: 0;
 	display: flex;
 	flex-flow: column;
+	list-style: none;
 }
 
-article.list li {
+article.list li,
+article.jobs li {
 	display: flex;
 	gap: 10px;
 	padding: 0.5rem 0;
-	border-bottom: solid rgb(230 230 230) 1px;
+	border-bottom: solid var(--list-border-color, rgb(230 230 230)) 1px;
 }
 
-article.list li:first-child {
-	border-top: solid rgb(230 230 230) 1px;
+article.list li:first-child,
+article.jobs li:first-child {
+	border-top: solid var(--list-border-color, rgb(230 230 230)) 1px;
 }
 
-article.list li p {
+article.jobs h4 {
+	margin: 0;
+	font-weight: normal;
+}
+
+article.list li p,
+article.jobs li p {
 	display: flex;
 	margin: 0;
 	color: gray;
 }
 
-article.list ul a {
+article.list ul a,
+article.jobs ul h4 {
 	color: var(--tweakers-blue-alt-normal);
 }
 
-article:is(main > article) > a:last-child {
+article:is(main > article) > a:last-child,
+article:is(main > article) > a:nth-last-of-type(2) {
 	--body-text-color: var(--tweakers-blue-alt-normal);
 
-	display: block;
+	display: var(--more-info-link-display, block);
 	margin-top: 0.5em;
 	padding-left: 1em;
 	background-image: url('/images/icons/filter_arrow_blue.svg');
@@ -356,6 +368,46 @@ article.videos h3 {
 article.videos p {
 	margin: 0;
 	font-size: bold;
+}
+
+article.jobs {
+	background-color: var(--tweakers-blue-grey-light);
+	margin: 15px;
+}
+
+article.jobs form {
+	padding: 0;
+}
+
+article.jobs h2 {
+	margin: 0 0 15px;
+}
+
+article.jobs h3 {
+	color: unset;
+}
+
+article.jobs li {
+	--list-border-color: hsl(0 0% 85%);
+}
+
+article.jobs picture {
+	flex: 1 1 0;
+	max-width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	border: solid 1px hsl(0 0 90%);
+}
+
+article.jobs img {
+	width: auto;
+	max-height: 35px;
+}
+
+article.jobs > a {
+	--more-info-link-display: inline-block;
 }
 
 /* Button states */
