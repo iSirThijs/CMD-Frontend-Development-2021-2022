@@ -206,7 +206,7 @@ nav[aria-label='Secondary'] li a {
 }
 
 /* articles default */
-article {
+article:not(article article) {
 	padding: 10px;
 	line-height: 1.75em;
 }
@@ -238,7 +238,7 @@ article.list ul {
 article.list li {
 	display: flex;
 	gap: 10px;
-	padding: 0.5rem;
+	padding: 0.5rem 0;
 	border-bottom: solid rgb(230 230 230) 1px;
 }
 
@@ -256,7 +256,7 @@ article.list ul a {
 	color: var(--tweakers-blue-alt-normal);
 }
 
-article.list > a:last-child {
+article:is(main > article) > a:last-child {
 	--body-text-color: var(--tweakers-blue-alt-normal);
 
 	display: block;
@@ -332,6 +332,30 @@ article.featured footer p:first-child {
 
 article.plus {
 	border-bottom: 5px solid var(--tweakers-green-normal);
+}
+
+article.videos {
+	color: var(--tweakers-blue-alt-normal);
+}
+
+article.videos article {
+	margin: 0.75em 0 1em;
+}
+
+article.videos article:first-of-type {
+	border-top: solid rgb(230 230 230) 1px;
+	padding-top: 1em;
+}
+
+article.videos h3 {
+	margin: 0;
+	font-size: 19px;
+	color: inherit;
+}
+
+article.videos p {
+	margin: 0;
+	font-size: bold;
 }
 
 /* Button states */
