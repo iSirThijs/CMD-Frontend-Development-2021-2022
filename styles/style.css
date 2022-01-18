@@ -335,7 +335,7 @@ article.featured footer p {
 }
 
 article.featured footer p:first-child {
-	--body-text-color: rgb(191, 191, 191);
+	--body-text-color: rgb(191 191 191);
 
 	text-transform: uppercase;
 	font-weight: bolder;
@@ -408,6 +408,30 @@ article.jobs img {
 
 article.jobs > a {
 	--more-info-link-display: inline-block;
+
+	margin-right: 1em;
+}
+
+body > footer {
+	background-color: rgb(51 51 51);
+	color: #bfbfbf;
+	padding: 20px 10px;
+}
+
+body > footer ul {
+	margin: 0 0 30px;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	justify-content: center;
+	gap: 15px;
+}
+
+body > footer p {
+	font-size: 11px;
+	text-align: center;
 }
 
 /* Button states */
