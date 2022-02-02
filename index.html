@@ -7,7 +7,11 @@
 
 		<title>Tweakers - Wij stellen technologie op de proef</title>
 
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="styles/style.css" rel="stylesheet" />
+		<link href="styles/icons.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;700&display=swap" rel="stylesheet" />
 		<link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
 
 		<script type="module" src="scripts/script.mjs"></script>
@@ -15,33 +19,44 @@
 
 	<body>
 		<header>
+			<a href="#main-nav">menu</a>
 			<h1>
 				<a href="/">
 					<picture>
-						<source srcset="images/tweakers_logo_full.svg" />
-						<img width="50%" src="images/tweakers_logo_full.svg" alt="Tweakers" />
+						<source srcset="images/logo/tweakers-full.svg" media="(min-width: 768px)" />
+						<source srcset="images/logo/tweakers-small.webp" type="image/webp" />
+						<source srcset="images/logo/tweakers-small.png" type="image/png" />
+						<img height="44px" src="images/tweakers_logo_full.svg" alt="Tweakers" />
 					</picture>
 				</a>
 			</h1>
-			<nav>
-				<ul>
-					<li><a href="">Nieuws</a></li>
-					<li><a href="">Reviews</a></li>
-					<li><a href="">Pricewatch</a></li>
-					<li><a href="">Vraag & Aanbod</a></li>
-					<li><a href="">Forum</a></li>
-				</ul>
-			</nav>
-			<form action="" role="search">
-				<label>
-					<input type="search" placeholder="Zoek in de site" />
-				</label>
-				<button type="submit">Zoeken</button>
-			</form>
 		</header>
-		<nav aria-label="secondary"></nav>
+		<form action="" role="search">
+			<label>
+				<input type="search" placeholder="Zoek in de site" />
+			</label>
+			<button type="submit">Zoeken</button>
+		</form>
+		<nav aria-label="Secondary">
+			<h2>Vergelijk Prijzen</h2>
+			<a href="">Alle categorieën <i></i></a>
+			<ul>
+				<li><a class="smartphones" href="">Smartphones</a></li>
+				<li><a class="laptops" href="">Laptops</a></li>
+				<li><a class="tablets" href="">Tablets</a></li>
+				<li><a class="hoofdtelefoons" href="">Hoofdtelefoon</a></li>
+				<li><a class="televisies" href="">Televisies</a></li>
+				<li><a class="gaming" href="">Gaming</a></li>
+				<li><a class="monitoren" href="">Monitoren</a></li>
+				<li><a class="opslag" href="">Opslag</a></li>
+				<li><a class="componenten" href="">Componenten</a></li>
+				<li><a class="cameras" href="">Camera's</a></li>
+				<li><a class="desktops" href="">Desktops</a></li>
+				<li><a class="videokaarten" href="">Videokaarten</a></li>
+			</ul>
+		</nav>
 		<main>
-			<article>
+			<article class="featured plus" style="--background-image: url('/images/article_apple.jpeg')">
 				<a href="">
 					<header>
 						<h2>Apples andere richting voor design</h2>
@@ -53,10 +68,10 @@
 					</picture>
 				</a>
 				<footer>
-					<a href="">Lees artikel</a>
+					<a class="button plus" href="">Lees artikel</a>
 				</footer>
 			</article>
-			<article>
+			<article class="list news">
 				<header>
 					<a href="">
 						<h2>Laatste Nieuws</h2>
@@ -64,11 +79,11 @@
 					<a href="">Tip de redactie</a>
 				</header>
 				<ul>
-					<li>
+					<!-- <li>
 						<p>17:13</p>
 						<a href="">Rainmeter 4.4.5</a>
 						<a href="">acht andere downloads</a>
-					</li>
+					</li> -->
 					<li>
 						<p>17:08</p>
 						<a href="">Tidal verlaagt prijs HiFi abonnement en introduceert HiFi Plus-abonnement</a>
@@ -96,7 +111,7 @@
 				</ul>
 				<a href="">Meer nieuws</a>
 			</article>
-			<article>
+			<article class="featured" style="--background-image: url('/images/article_best_buy_smartphone.jpeg')">
 				<a href="">
 					<header>
 						<h2>Smartphone Best Buy Guide</h2>
@@ -108,14 +123,14 @@
 					</picture>
 				</a>
 				<footer>
-					<a href="">Lees best buy guide</a>
+					<a class="button" href="">Lees best buy guide</a>
 					<a href="">
 						<p>Vergelijk Prijzen</p>
 						<p>vanaf €97,-</p>
 					</a>
 				</footer>
 			</article>
-			<article>
+			<article class="list forum">
 				<h2>Nu op het forum</h2>
 				<ul>
 					<li>
@@ -123,61 +138,75 @@
 							<source srcset="images/default-avatar.png" />
 							<img width="35px" src="images/default-avatar.png" alt="Een generieke avatar afbeelding" />
 						</picture>
-						<a href="">Ik wil leren gamen, waar te beginnen?</a>
-						<p>In Hardware & Spielerij Algemeen</p>
+						<div>
+							<a href="">Ik wil leren gamen, waar te beginnen?</a>
+							<p>In Hardware & Spielerij Algemeen</p>
+						</div>
 					</li>
 					<li>
 						<picture>
 							<source srcset="images/default-avatar.png" />
 							<img width="35px" src="images/default-avatar.png" alt="Een generieke avatar afbeelding" />
 						</picture>
-						<a href="">[F1 2021] Race 20 GP van Qatar</a>
-						<p>In Sport</p>
+						<div>
+							<a href="">[F1 2021] Race 20 GP van Qatar</a>
+							<p>In Sport</p>
+						</div>
 					</li>
 					<li>
 						<picture>
 							<source srcset="images/default-avatar.png" />
 							<img width="35px" src="images/default-avatar.png" alt="Een generieke avatar afbeelding" />
 						</picture>
-						<a href="">[AMD Radeon RX6000 series] Levertijden & Prijzen</a>
-						<p>In Videokaarten & Beeldschermen</p>
+						<div>
+							<a href="">[AMD Radeon RX6000 series] Levertijden & Prijzen</a>
+							<p>In Videokaarten & Beeldschermen</p>
+						</div>
 					</li>
 					<li>
 						<picture>
 							<source srcset="images/default-avatar.png" />
 							<img width="35px" src="images/default-avatar.png" alt="Een generieke avatar afbeelding" />
 						</picture>
-						<a href="">[AMD Radeon RX6000 series] Levertijden & Prijzen</a>
-						<p>In Videokaarten & Beeldschermen</p>
+						<div>
+							<a href="">[AMD Radeon RX6000 series] Levertijden & Prijzen</a>
+							<p>In Videokaarten & Beeldschermen</p>
+						</div>
 					</li>
 					<li>
 						<picture>
 							<source srcset="images/default-avatar.png" />
 							<img width="35px" src="images/default-avatar.png" alt="Een generieke avatar afbeelding" />
 						</picture>
-						<a href="">Mancaves show ze hier, deel je tips & tricks</a>
-						<p>In Bouwen en klussen</p>
+						<div>
+							<a href="">Mancaves show ze hier, deel je tips & tricks</a>
+							<p>In Bouwen en klussen</p>
+						</div>
 					</li>
 					<li>
 						<picture>
 							<source srcset="images/default-avatar.png" />
 							<img width="35px" src="images/default-avatar.png" alt="Een generieke avatar afbeelding" />
 						</picture>
-						<a href="">Financieel ondersteunen niet eigen kinderen</a>
-						<p>In Persoonlijke Financiën, Studie en Loopbaan</p>
+						<div>
+							<a href="">Financieel ondersteunen niet eigen kinderen</a>
+							<p>In Persoonlijke Financiën, Studie en Loopbaan</p>
+						</div>
 					</li>
 					<li>
 						<picture>
 							<source srcset="images/default-avatar.png" />
 							<img width="35px" src="images/default-avatar.png" alt="Een generieke avatar afbeelding" />
 						</picture>
-						<a href="">Welke kwaliteit tegelwerk te verwachten</a>
-						<p>In Bouwen en klussen</p>
+						<div>
+							<a href="">Welke kwaliteit tegelwerk te verwachten</a>
+							<p>In Bouwen en klussen</p>
+						</div>
 					</li>
 				</ul>
 				<a href="">Active Topics</a>
 			</article>
-			<article>
+			<article class="list forum">
 				<h2>Populaire tweakblogs</h2>
 				<ul>
 					<li>
@@ -185,37 +214,45 @@
 							<source srcset="images/default-avatar.png" />
 							<img width="35px" src="images/default-avatar.png" alt="Een generieke avatar afbeelding" />
 						</picture>
-						<a href="">Er gaat iets niet helemaal goed bij Microsoft Xbox</a>
-						<p>Door linksquest</p>
+						<div>
+							<a href="">Er gaat iets niet helemaal goed bij Microsoft Xbox</a>
+							<p>Door linksquest</p>
+						</div>
 					</li>
 					<li>
 						<picture>
 							<source srcset="images/default-avatar.png" />
 							<img width="35px" src="images/default-avatar.png" alt="Een generieke avatar afbeelding" />
 						</picture>
-						<a href="">50 reviews of feedback - de ultieme fetisj</a>
-						<p>Door liberque</p>
+						<div>
+							<a href="">50 reviews of feedback - de ultieme fetisj</a>
+							<p>Door liberque</p>
+						</div>
 					</li>
 					<li>
 						<picture>
 							<source srcset="images/default-avatar.png" />
 							<img width="35px" src="images/default-avatar.png" alt="Een generieke avatar afbeelding" />
 						</picture>
-						<a href="">Gaan Rusland en China binnenkort aanvallen</a>
-						<p>Door Harm_H</p>
+						<div>
+							<a href="">Gaan Rusland en China binnenkort aanvallen</a>
+							<p>Door Harm_H</p>
+						</div>
 					</li>
 					<li>
 						<picture>
 							<source srcset="images/default-avatar.png" />
 							<img width="35px" src="images/default-avatar.png" alt="Een generieke avatar afbeelding" />
 						</picture>
-						<a href="">Nieuwe buren - Drugs dealen?!</a>
-						<p>Door Weissbier</p>
+						<div>
+							<a href="">Nieuwe buren - Drugs dealen?!</a>
+							<p>Door Weissbier</p>
+						</div>
 					</li>
 				</ul>
 				<a href="">Meer tweakblogs</a>
 			</article>
-			<article>
+			<article class="videos">
 				<h2>Laatste video's</h2>
 				<article>
 					<a href="">
@@ -255,80 +292,83 @@
 				</article>
 				<a href="">Bekijk alle video's</a>
 			</article>
-			<article>
+			<article class="jobs">
 				<header>
 					<h2>IT-banen</h2>
 					<form action="" role="search">
 						<label>
-							<input type="search" />
+							<input type="search" placeholder="Zoek in vacatures" />
 						</label>
 						<button type="submit">Zoeken</button>
 					</form>
 				</header>
 				<h3>Topbanen</h3>
-				<article>
-					<a href="">
+				<ul>
+					<li>
 						<picture>
-							<source srcset="" />
-							<img width="70px" src="" alt="" />
+							<source srcset="images/vacature.png" />
+							<img width="100px" src="images/vacature.png" alt="" />
 						</picture>
-					</a>
-					<h4>
-						<a href="">Scrum Master</a>
-					</h4>
-					<a href="">Randstad Groep, Diemen</a>
-				</article>
-				<article>
-					<a href="">
+						<div>
+							<h4>Scrum Master</h4>
+							<p>Randstad Groep, Diemen</p>
+						</div>
+					</li>
+					<li>
 						<picture>
-							<source srcset="" />
-							<img width="70px" src="" alt="" />
+							<source srcset="images/vacature.png" />
+							<img width="100px" src="images/vacature.png" alt="" />
 						</picture>
-					</a>
-					<h4>
-						<a href="">Back-End Developer Verifai</a>
-					</h4>
-					<a href="">MobielWerk B.V., Groningen</a>
-				</article>
-				<article>
-					<a href="">
+						<div>
+							<h4>Back-End Developer Verifai</h4>
+							<p>MobielWerk B.V., Groningen</p>
+						</div>
+					</li>
+					<li>
 						<picture>
-							<source srcset="" />
-							<img width="70px" src="" alt="" />
+							<source srcset="images/vacature.png" />
+							<img width="100px" src="images/vacature.png" alt="" />
 						</picture>
-					</a>
-					<h4>
-						<a href="">Medewerker Quality & Compliance</a>
-					</h4>
-					<a href="">PB Web Media, Haarlem</a>
-				</article>
-				<article>
-					<a href="">
+						<div>
+							<h4>Medewerker Quality & Compliance</h4>
+							<p>PB Web Media, Haarlem</p>
+						</div>
+					</li>
+					<li>
 						<picture>
-							<source srcset="" />
-							<img width="70px" src="" alt="" />
+							<source srcset="images/vacature.png" />
+							<img width="100px" src="images/vacature.png" alt="" />
 						</picture>
-					</a>
-					<h4>
-						<a href="">Agile Coach</a>
-					</h4>
-					<a href="">DPG Media, Amsterdam</a>
-				</article>
-				<article>
-					<a href="">
+						<div>
+							<h4>Agile Coach</h4>
+							<p>DPG Media, Amsterdam</p>
+						</div>
+					</li>
+					<li>
 						<picture>
-							<source srcset="" />
-							<img width="70px" src="" alt="" />
+							<source srcset="images/vacature.png" />
+							<img width="100px" src="images/vacature.png" alt="" />
 						</picture>
-					</a>
-					<h4>
-						<a href="">Adviseur Health@Work Groningen</a>
-					</h4>
-					<a href="">Randstad Groep, Diemen</a>
-				</article>
+						<div>
+							<h4>Adviseur Health@Work Groningen</h4>
+							<p>Randstad Groep, Diemen</p>
+						</div>
+					</li>
+				</ul>
+				<a href="https://tweakers.net/carriere/it-banen/zoeken/">Meer topbanen</a>
+				<a href="https://tweakers.net/info/advertising/carriere/">Informatie voor werkgevers</a>
 			</article>
 		</main>
 		<footer>
+			<nav id="main-nav" aria-label="Primary">
+				<ul>
+					<li><a href="">Nieuws</a></li>
+					<li><a href="">Reviews</a></li>
+					<li><a href="">Pricewatch</a></li>
+					<li><a href="">Vraag & Aanbod</a></li>
+					<li><a href="">Forum</a></li>
+				</ul>
+			</nav>
 			<ul>
 				<li><a href="">Adverteren</a></li>
 				<li><a href="">Contact</a></li>
@@ -337,12 +377,6 @@
 				<li><a href="">Jouw Privacy</a></li>
 				<li><a href="">Algemene voorwaarden</a></li>
 				<li><a href="">Cookies</a></li>
-			</ul>
-			<ul>
-				<li><a href="">Volg @tweakers</a></li>
-				<li><a href="">Like Tweakers</a></li>
-				<li><a href="">Rss-feeds</a></li>
-				<li><a href="">Tweakers Discord</a></li>
 			</ul>
 			<p>Tweakers vormt samen met Hardware Info, AutoTrack, Gaspedaal.nl, Nationale Vacaturebank, Intermediair en Independer DPG Online Services B.V.</p>
 			<p>Alle rechten voorbehouden © 1998 - 2021 • Hosting door True</p>
